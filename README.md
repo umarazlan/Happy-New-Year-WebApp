@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🎉 Happy New Year App
 
 A festive React application to wish your friends and family a Happy New Year!
@@ -34,3 +35,6 @@ Follow these steps to run the project locally:
 - `npm run dev`: Starts the development server.
 - `npm run build`: Builds the app for production.
 - `npm run preview`: Preview the production build locally.
+=======
+# Happy-New-Year-WebApp
+>>>>>>> 21e2154fda7971d29c792f512d7d4cc790bd1f64
