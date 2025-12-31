@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Main Container */
+.container {
+  width: 100%;
+  min-height: 100vh;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Card (Form) */
+.card {
+  width: 100%;
+  max-width: 380px;
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(10px);
+  padding: 24px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+.card h1 {
+  font-size: clamp(1.5rem, 5vw, 2rem);
+  margin-bottom: 20px;
+}
+
+/* Input */
+.card input {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  margin-bottom: 16px;
+}
+
+/* Button */
+.card button {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  background: linear-gradient(135deg, #ff9800, #ff5722);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.card button:hover {
+  transform: scale(1.03);
+  opacity: 0.9;
+}
+
+/* Celebration Screen */
+.celebration {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Responsive Heading */
+.celebration h1 {
+  font-size: clamp(2rem, 6vw, 3.5rem);
+  line-height: 1.2;
+  margin: 0;
+}
+
+/* Tablet screens */
+@media (min-width: 768px) {
+  .card {
+    padding: 32px;
+  }
+
+  .celebration h1 {
+    font-size: 3.2rem;
+  }
+}
+
+/* Large screens */
+@media (min-width: 1200px) {
+  .celebration h1 {
+    font-size: 3.8rem;
+  }
+}
